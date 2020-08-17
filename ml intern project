@@ -1,0 +1,18 @@
+#importing files
+import numpy as np
+impoort pandas as pd
+import matplotlib.pyplot as plt
+import sklearn
+matplotlib inline
+
+
+#reading data into the pandas as car_data
+casr_data=pd.read("data.csv")
+#reading the shape and checking the statistical summary
+car_data.describe(),car_data.shape
+
+#getting the information such as number of not nan values in each column and getting the data type
+car_dta.info()
+#since marketcategory has more no of nan values it is best to drop that column
+car_data=car_data.drop(columns="Market Category")
+car_data.info()
