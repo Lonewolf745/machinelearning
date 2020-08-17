@@ -7,7 +7,7 @@ matplotlib inline
 
 
 #reading data into the pandas as car_data
-casr_data=pd.read("data.csv")
+casr_data=pd.read("/data.csv")
 #reading the shape and checking the statistical summary
 car_data.describe(),car_data.shape
 
